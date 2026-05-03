@@ -1,28 +1,59 @@
-📊 Automated Sales Analysis 
-🚀 Overview
+# Automated Sales Analysis Dashboard
 
-This project uses Python to automate the analysis of retail sales data, generating insights into performance, profitability, and trends.
+A portfolio-ready data analytics project that cleans and analyzes the **Superstore** dataset, then presents business insights in a live **Streamlit dashboard**.
 
-❗ Problem
+## Why this project?
+Manual sales reporting is slow and hard to scale. This project automates the process so decision-makers can quickly see performance, trends, and risk areas.
 
-Manual data analysis is time-consuming and not scalable for large datasets.
+## What it delivers
+- **Total Sales and Total Profit KPIs**
+- **Top 5 products by sales**
+- **Sales by region**
+- **Monthly sales trend**
+- **Top 5 loss-making products**
 
-💡 Solution
+## Tech stack
+- Python
+- Pandas
+- Matplotlib
+- Streamlit
 
-Built a Python script using Pandas to clean, process, and analyze sales data, producing key insights automatically.
+## Project structure
+```text
+.
+├── app.py              # Streamlit dashboard (portfolio/demo app)
+├── analysis.py         # Script-based analysis workflow
+├── data/
+│   └── Superstore.csv
+└── requirements.txt
+```
 
-📈 Key Insights
-Identified top-performing products by revenue
-Detected loss-making products
-Analyzed regional performance
-Observed monthly sales trends
-🛠️ Tools
-Python
-Pandas
-Matplotlib
-📂 Dataset
+## Run locally
+```bash
+# 1) Create and activate virtual environment (optional but recommended)
+python -m venv .venv
 
-Superstore Dataset
+# Windows PowerShell
+.venv\Scripts\Activate.ps1
 
-▶️ How to Run
+# 2) Install dependencies
+pip install -r requirements.txt
+
+# 3) Run dashboard
+streamlit run app.py
+```
+
+## Run script version
+```bash
 python analysis.py
+```
+
+## Deployment (Streamlit Community Cloud)
+1. Push this repo to GitHub.
+2. Go to [share.streamlit.io](https://share.streamlit.io).
+3. Select your repo, branch `main`, and file `app.py`.
+4. Deploy.
+
+## Portfolio links
+- **Live Demo:** `https://your-app-name.streamlit.app`
+- **GitHub Repo:** `https://github.com/your-username/your-repo-name`
